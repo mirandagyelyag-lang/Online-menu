@@ -70,3 +70,12 @@
 @keyframes sauceStroke{to{stroke-dashoffset:0}}
 @keyframes grainPop{to{opacity:.7}}
 @media(prefers-reduced-motion:reduce){.sauceWord b,.sauceSwipe path,.grain{animation:none!important;opacity:1!important;clip-path:none!important;stroke-dashoffset:0!important}}
+
+/* Hotfix: keep animated letters in horizontal words */
+.sauceLogo h2{width:min(90%,760px)!important;display:block!important;text-align:center!important}
+.sauceWord{display:flex!important;flex-direction:row!important;align-items:baseline!important;justify-content:center!important;width:100%!important;white-space:nowrap!important}
+.sauceWord b{display:inline-block!important;flex:0 0 auto!important;width:auto!important;writing-mode:horizontal-tb!important;text-orientation:mixed!important}
+.sauceWord.top{font-size:.72em!important}
+.sauceWord.mid{font-size:.44em!important;margin:.12em 0!important}
+.sauceWord.bottom{font-size:.76em!important}
+@media(max-width:700px){.sauceLogo h2{width:100%!important;font-size:64px!important}.sauceWord.top{font-size:.72em!important}.sauceWord.mid{font-size:.48em!important}.sauceWord.bottom{font-size:.66em!important;letter-spacing:-.08em!important}.sauceLogo{overflow:visible!important}}
