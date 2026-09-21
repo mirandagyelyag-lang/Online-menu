@@ -87,3 +87,13 @@
 @keyframes sauceWriteLoop{0%,3%{opacity:0;clip-path:inset(100% 0 0 0);transform:translateY(12px) scale(.9)}9%,76%{opacity:1;clip-path:inset(0 0 0 0);transform:translateY(0) scale(1)}88%,100%{opacity:0;clip-path:inset(0 0 0 0);transform:translateY(0) scale(1)}}
 @keyframes sauceStrokeLoop{0%,48%{stroke-dashoffset:1;opacity:0}58%,76%{stroke-dashoffset:0;opacity:1}88%,100%{stroke-dashoffset:0;opacity:0}}
 @keyframes grainLoop{0%,55%{opacity:0}62%,76%{opacity:.7}88%,100%{opacity:0}}
+
+/* Premium hand-drawn sauce signature: SVG strokes, no font effects */
+.sauceSignature{min-height:360px!important;overflow:visible!important}
+.handSauce{width:min(88%,760px);height:auto;overflow:visible}
+.saucePaths path{fill:none;stroke:#6f2118;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;vector-effect:non-scaling-stroke;filter:drop-shadow(0 1px 1px #210806);pathLength:1;stroke-dasharray:1;stroke-dashoffset:1;opacity:0;animation:sauceDraw 8s cubic-bezier(.55,.05,.35,1) infinite;animation-delay:calc(var(--n)*.16s)}
+.saucePaths path:nth-child(3n){stroke-width:11}.saucePaths path:nth-child(4n){stroke-width:9}.saucePaths .sauceTail{stroke-width:6;opacity:.75}
+@keyframes sauceDraw{0%,3%{stroke-dashoffset:1;opacity:0}7%{opacity:.9}32%,76%{stroke-dashoffset:0;opacity:.94}88%,100%{stroke-dashoffset:0;opacity:0}}
+.sauceLogo h2,.sauceWord,.sauceSwipe,.sauceLogo .grain{display:none!important}
+@media(max-width:700px){.sauceSignature{min-height:310px!important}.handSauce{width:96%!important}.saucePaths path{stroke-width:8}.saucePaths path:nth-child(3n){stroke-width:9}.saucePaths path:nth-child(4n){stroke-width:7}.saucePaths .sauceTail{stroke-width:5}}
+@media(prefers-reduced-motion:reduce){.saucePaths path{animation:none!important;stroke-dashoffset:0!important;opacity:.94!important}}
