@@ -41,3 +41,18 @@
  .paper b{font-size:28px!important}
  .foot{min-height:130px!important}
 }
+
+/* Sauce identity block */
+.sauceSection{background:#050505!important;min-height:520px!important;grid-template-columns:.8fr 2fr .8fr!important;border-color:#201b18!important}
+.sauceSection .sauceSide{display:flex;flex-direction:column;justify-content:center;padding:4vw;font:600 clamp(19px,2vw,34px)/1.15 'Cormorant Garamond';letter-spacing:.02em;color:#eee6da}
+.sauceSection .sauceSide.left{font-family:Inter,sans-serif;font-size:clamp(13px,1.25vw,19px);font-weight:800}
+.sauceSection .sauceSide i{width:58px;border-top:3px solid #9d3e26;margin-top:24px}
+.sauceLogo{position:relative;display:grid;place-items:center;overflow:hidden}
+.sauceLogo h2{position:relative;z-index:2;margin:0;transform:rotate(-5deg);text-align:center;font-family:'Archivo Black',sans-serif;font-size:clamp(70px,9vw,145px);line-height:.67;letter-spacing:-.07em}
+.sauceLogo h2 b{display:block;color:#7d2d18;text-shadow:0 2px 0 #bd6848,2px 4px 0 #391109,0 0 14px #7b271455;filter:drop-shadow(0 7px 3px #000);-webkit-text-stroke:1px #a95034}
+.sauceLogo h2 b:nth-child(2){font-size:.63em;margin:15px 0 10px;transform:rotate(4deg)}
+.sauceLogo h2 b:nth-child(3){font-size:1.04em}
+.sauceLogo h2 b:after{content:'';display:inline-block;width:.07em;height:.18em;background:#762613;border-radius:50% 50% 70% 70%;transform:translate(-.12em,.14em)}
+.sauceSwipe{position:absolute;z-index:1;width:75%;bottom:11%;overflow:visible}.sauceSwipe path{fill:none;stroke:#7d2d18;stroke-width:11;stroke-linecap:round;filter:drop-shadow(0 3px 0 #381008)}
+.sauceLogo .grain{position:absolute;color:#d9cbbb;font-size:15px;opacity:.7}.g1{left:17%;top:28%;transform:rotate(20deg)}.g2{right:17%;top:35%;font-size:24px!important}.g3{right:25%;bottom:20%}
+@media(max-width:700px){.sauceSection{grid-template-columns:1fr!important;min-height:580px!important;padding:38px 18px!important}.sauceSection .sauceSide{padding:0!important}.sauceSection .sauceSide.left{align-self:start;font-size:12px!important}.sauceSection .sauceSide.right{align-self:end;text-align:right;font-size:24px!important}.sauceSection .sauceSide.right i{align-self:flex-end}.sauceLogo{min-height:310px!important}.sauceLogo h2{font-size:78px!important}.sauceSwipe{bottom:8%;width:92%}}
