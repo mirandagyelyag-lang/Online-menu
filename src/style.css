@@ -79,3 +79,11 @@
 .sauceWord.mid{font-size:.44em!important;margin:.12em 0!important}
 .sauceWord.bottom{font-size:.76em!important}
 @media(max-width:700px){.sauceLogo h2{width:100%!important;font-size:64px!important}.sauceWord.top{font-size:.72em!important}.sauceWord.mid{font-size:.48em!important}.sauceWord.bottom{font-size:.66em!important;letter-spacing:-.08em!important}.sauceLogo{overflow:visible!important}}
+
+/* Loop the sauce-writing sequence forever */
+.sauceWord b{animation-name:sauceWriteLoop!important;animation-duration:4.2s!important;animation-timing-function:cubic-bezier(.2,.8,.2,1)!important;animation-delay:calc(var(--i)*.13s)!important;animation-iteration-count:infinite!important;animation-fill-mode:both!important}
+.sauceSwipe path{animation:sauceStrokeLoop 4.2s ease-out infinite!important;animation-delay:0s!important}
+.grain{animation:grainLoop 4.2s ease-out infinite!important}
+@keyframes sauceWriteLoop{0%,3%{opacity:0;clip-path:inset(100% 0 0 0);transform:translateY(12px) scale(.9)}9%,76%{opacity:1;clip-path:inset(0 0 0 0);transform:translateY(0) scale(1)}88%,100%{opacity:0;clip-path:inset(0 0 0 0);transform:translateY(0) scale(1)}}
+@keyframes sauceStrokeLoop{0%,48%{stroke-dashoffset:1;opacity:0}58%,76%{stroke-dashoffset:0;opacity:1}88%,100%{stroke-dashoffset:0;opacity:0}}
+@keyframes grainLoop{0%,55%{opacity:0}62%,76%{opacity:.7}88%,100%{opacity:0}}
