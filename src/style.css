@@ -56,3 +56,17 @@
 .sauceSwipe{position:absolute;z-index:1;width:75%;bottom:11%;overflow:visible}.sauceSwipe path{fill:none;stroke:#7d2d18;stroke-width:11;stroke-linecap:round;filter:drop-shadow(0 3px 0 #381008)}
 .sauceLogo .grain{position:absolute;color:#d9cbbb;font-size:15px;opacity:.7}.g1{left:17%;top:28%;transform:rotate(20deg)}.g2{right:17%;top:35%;font-size:24px!important}.g3{right:25%;bottom:20%}
 @media(max-width:700px){.sauceSection{grid-template-columns:1fr!important;min-height:580px!important;padding:38px 18px!important}.sauceSection .sauceSide{padding:0!important}.sauceSection .sauceSide.left{align-self:start;font-size:12px!important}.sauceSection .sauceSide.right{align-self:end;text-align:right;font-size:24px!important}.sauceSection .sauceSide.right i{align-self:flex-end}.sauceLogo{min-height:310px!important}.sauceLogo h2{font-size:78px!important}.sauceSwipe{bottom:8%;width:92%}}
+
+/* Letter-by-letter sauce reveal */
+.sauceLogo h2{display:flex!important;flex-direction:column;align-items:center;gap:5px}
+.sauceWord{display:flex;justify-content:center;line-height:.72}
+.sauceWord b{display:inline-block!important;font-size:inherit!important;margin:0!important;transform:none!important;opacity:0;clip-path:inset(100% 0 0 0);animation:sauceWrite .26s cubic-bezier(.2,.8,.2,1) forwards;animation-delay:calc(.18s + var(--i)*.13s);transform-origin:bottom center}
+.sauceWord.mid{font-size:.62em;transform:rotate(3deg);margin:5px 0}
+.sauceWord.bottom{font-size:1.02em}
+.sauceWord b:after{display:none!important}
+.sauceSwipe path{stroke-dasharray:1;stroke-dashoffset:1;animation:sauceStroke .7s ease-out 1.85s forwards}
+.grain{opacity:0!important;animation:grainPop .25s ease-out 2.15s forwards}
+@keyframes sauceWrite{0%{opacity:0;clip-path:inset(100% 0 0 0);transform:translateY(13px) scale(.88)}55%{opacity:1}100%{opacity:1;clip-path:inset(0 0 0 0);transform:translateY(0) scale(1)}}
+@keyframes sauceStroke{to{stroke-dashoffset:0}}
+@keyframes grainPop{to{opacity:.7}}
+@media(prefers-reduced-motion:reduce){.sauceWord b,.sauceSwipe path,.grain{animation:none!important;opacity:1!important;clip-path:none!important;stroke-dashoffset:0!important}}
