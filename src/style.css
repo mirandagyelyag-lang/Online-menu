@@ -97,3 +97,8 @@
 .sauceLogo h2,.sauceWord,.sauceSwipe,.sauceLogo .grain{display:none!important}
 @media(max-width:700px){.sauceSignature{min-height:310px!important}.handSauce{width:96%!important}.saucePaths path{stroke-width:8}.saucePaths path:nth-child(3n){stroke-width:9}.saucePaths path:nth-child(4n){stroke-width:7}.saucePaths .sauceTail{stroke-width:5}}
 @media(prefers-reduced-motion:reduce){.saucePaths path{animation:none!important;stroke-dashoffset:0!important;opacity:.94!important}}
+
+/* Temporary approved sauce artwork */
+.sauceImageSection{display:block!important;min-height:0!important;background:#000!important;border:0!important}
+.sauceArtwork{display:block;width:100%;height:auto;object-fit:contain;background:#000}
+@media(max-width:700px){.sauceImageSection{min-height:0!important;padding:0!important}.sauceArtwork{width:100%!important;height:auto!important;object-fit:contain!important}}
