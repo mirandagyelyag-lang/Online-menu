@@ -13,7 +13,7 @@ header{height:72px;position:sticky;top:0;z-index:30;display:grid;grid-template-c
 @media(max-width:700px){body{overflow-x:hidden}header{height:62px;grid-template-columns:1fr auto;padding:0 16px}header a,.word{display:none}.logo{text-align:left;font-size:11px}.order{grid-column:2;padding:9px 11px;font-size:7px;letter-spacing:.14em}.hero{height:82svh;min-height:590px;background-position:58% center}.heroCopy{left:22px;bottom:8%}.heroCopy h1{font-size:49px}.heroCopy p{display:none}.sidecats{right:16px;top:12%;font-size:7px}.scroll{display:none}.formalIdentity{min-height:420px;padding:70px 18px}.formalEyebrow{font-size:6px;margin-bottom:35px}.formalName span{font-size:32px;margin-left:-120px}.formalName strong{font-size:70px}.formalIdentity p{font-size:16px;margin-top:32px}.feature{height:430px;padding:28px 22px;background-position:60% center}.feature h3{font-size:42px}.feature em{top:9%;right:17px;font-size:14px}.grill{height:310px}.grillNote{font-size:18px}.grillCaption{font-size:6px}.categoryShow{padding:58px 18px 40px}.categoryTitle{display:block;margin-bottom:25px}.categoryTitle h3{font-size:43px}.categoryTitle span{display:none}.categoryCards{display:grid;grid-template-columns:1fr 1fr;gap:9px}.categoryCards button:first-child{grid-column:1/-1}.categoryCards button:first-child img{aspect-ratio:1.55}.categoryCards img{aspect-ratio:1.1}.categoryCards b{font-size:18px}.must{display:block;padding:35px 18px 65px}.mustIntro{padding:0;margin-bottom:30px}.mustIntro h3{font-size:43px;margin:0 0 15px}.must article{display:grid;grid-template-columns:42% 58%;margin-bottom:9px}.must article>img{height:100%;min-height:175px}.must article>div{padding:17px}.must article p{min-height:0}.where{display:block}.wherePic{min-height:360px}.wherePic strong{font-size:28px}.whereCopy{padding:60px 22px}.whereCopy h3{font-size:52px}.paper{min-height:230px;margin:0 18px 50px;padding:35px 28px}.shop{padding:45px 16px 110px}.back{margin-bottom:45px}.shop>h2{font-size:65px}.shop nav{gap:20px}.products{grid-template-columns:1fr}.products article>img{height:230px}.foot{padding:45px 22px;display:block;min-height:130px}.foot span{display:block;margin-top:15px;line-height:2}.floating{bottom:12px}.overlay aside{padding:25px 20px}}
 
 /* POLLO + SUSHI EDITORIAL REFRESH */
-.hero{background-image:url('https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?auto=format&fit=crop&w=1800&q=90')}
+.hero{background-image:url('/pollo-sushi-1.png')}
 .sushiFeature{background-position:center 48%}
 @media(max-width:700px){
  .categoryCards{grid-template-columns:1fr 1fr}
@@ -21,4 +21,19 @@ header{height:72px;position:sticky;top:0;z-index:30;display:grid;grid-template-c
  .categoryCards button:first-child img{aspect-ratio:1.1}
  .hero{background-position:54% center}
  .sushiFeature{background-position:center}
+}
+
+/* CHUCKY HERO — pollo + sushi official photography */
+.hero{
+  background-image:
+    linear-gradient(180deg,rgba(10,6,3,.08) 0%,rgba(10,5,2,.04) 45%,rgba(8,4,2,.66) 100%),
+    url('/pollo-sushi-1.png');
+  background-position:center 52%;
+  background-size:cover;
+}
+@media(max-width:700px){
+  .hero{
+    background-position:center 48%;
+    background-size:cover;
+  }
 }
