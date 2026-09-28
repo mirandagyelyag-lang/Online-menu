@@ -113,3 +113,34 @@ header{height:72px;position:sticky;top:0;z-index:30;display:grid;grid-template-c
     top:24px !important;
   }
 }
+
+/* SUSHI SECTION — desktop/laptop composition fix */
+@media(min-width:701px){
+  .sushiFeature{
+    height:470px !important;
+    min-height:470px !important;
+    background-image:url('/sushi-2.png') !important;
+    background-size:cover !important;
+    background-position:center 72% !important;
+  }
+  .sushiFeature::after{
+    background:linear-gradient(90deg,rgba(5,3,2,.08) 0%,rgba(5,3,2,.03) 55%,rgba(5,3,2,.38) 100%) !important;
+  }
+  .sushiFeature .grillNote{
+    right:5vw !important;
+    left:auto !important;
+    top:18% !important;
+    width:auto !important;
+    font-size:25px !important;
+    line-height:1.08 !important;
+  }
+  .sushiFeature .grillCaption{
+    right:5vw !important;
+    left:auto !important;
+    bottom:35px !important;
+  }
+  .sushiFeature .grillNumber{
+    left:4vw !important;
+    top:35px !important;
+  }
+}
