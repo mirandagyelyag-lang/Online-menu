@@ -8,6 +8,7 @@ const products=[
 {id:6,cat:'Bebidas',name:'Bebida',desc:'Elige entre los sabores disponibles.',price:2000,img:'https://images.unsplash.com/photo-1622483767028-3f66f32aef97?auto=format&fit=crop&w=900&q=85'}
 ];
 const menuCats=['Pollo frito','Sushi','Salsas','Bebidas'];
+// Public production deploy sync
 const money=n=>'$'+n.toLocaleString('es-CL');
 function App(){const[view,setView]=useState('home'),[cat,setCat]=useState('Pollo frito'),[cart,setCart]=useState({}),[open,setOpen]=useState(false);const add=id=>setCart(c=>({...c,[id]:(c[id]||0)+1}));const sub=id=>setCart(c=>({...c,[id]:Math.max(0,(c[id]||0)-1)}));const count=Object.values(cart).reduce((a,b)=>a+b,0),total=products.reduce((s,p)=>s+(cart[p.id]||0)*p.price,0);const go=c=>{setCat(c);setView('menu');scrollTo(0,0)};
 return <div className="site"><header><button className="word" onClick={()=>setView('menu')}>MENÚ</button><a href="#about">NOSOTROS</a><a href="#where">UBICACIÓN</a><button className="logo" onClick={()=>{setView('home');scrollTo(0,0)}}>'ONDE EL<br/>CHUCKY</button><a href="#contact">CONTACTO</a><button className="order" onClick={()=>setOpen(true)}>HAZ TU PEDIDO {count>0&&<b>{count}</b>}</button></header>
