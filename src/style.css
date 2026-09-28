@@ -70,7 +70,7 @@ header{height:72px;position:sticky;top:0;z-index:30;display:grid;grid-template-c
 .sushiFeature{
   background-image:
     linear-gradient(90deg,rgba(8,4,2,.10) 0%,rgba(8,4,2,.03) 52%,rgba(8,4,2,.34) 100%),
-    url('/sushi-2.png') !important;
+    url('/sushi-02.png') !important;
   background-position:center !important;
   background-size:cover !important;
 }
@@ -83,7 +83,7 @@ header{height:72px;position:sticky;top:0;z-index:30;display:grid;grid-template-c
 
 /* SUSHI SECTION — restore editorial composition on mobile */
 .sushiFeature{
-  background-image:url('/sushi-2.png') !important;
+  background-image:url('/sushi-02.png') !important;
 }
 @media(max-width:700px){
   .sushiFeature{
@@ -119,7 +119,7 @@ header{height:72px;position:sticky;top:0;z-index:30;display:grid;grid-template-c
   .sushiFeature{
     height:470px !important;
     min-height:470px !important;
-    background-image:url('/sushi-2.png') !important;
+    background-image:url('/sushi-02.png') !important;
     background-size:cover !important;
     background-position:center 72% !important;
   }
@@ -148,7 +148,7 @@ header{height:72px;position:sticky;top:0;z-index:30;display:grid;grid-template-c
 /* SUSHI SECTION — panoramic image, no crop/zoom */
 .sushiFeature{
   background-color:#120b07 !important;
-  background-image:url('/sushi-2.png') !important;
+  background-image:url('/sushi-02.png') !important;
   background-repeat:no-repeat !important;
   background-size:100% auto !important;
   background-position:center center !important;
