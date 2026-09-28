@@ -164,3 +164,13 @@ header{height:72px;position:sticky;top:0;z-index:30;display:grid;grid-template-c
     background-position:center center !important;
   }
 }
+
+/* SUSHI SECTION — final framing adjustment */
+.sushiFeature{
+  background-position:center 44% !important;
+}
+@media(max-width:700px){
+  .sushiFeature{
+    background-position:center 44% !important;
+  }
+}
