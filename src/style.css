@@ -144,3 +144,23 @@ header{height:72px;position:sticky;top:0;z-index:30;display:grid;grid-template-c
     top:35px !important;
   }
 }
+
+/* SUSHI SECTION — panoramic image, no crop/zoom */
+.sushiFeature{
+  background-color:#120b07 !important;
+  background-image:url('/sushi-2.png') !important;
+  background-repeat:no-repeat !important;
+  background-size:100% auto !important;
+  background-position:center center !important;
+}
+.sushiFeature::after{
+  background:linear-gradient(90deg,rgba(6,3,2,.08),rgba(6,3,2,.05) 58%,rgba(6,3,2,.34)) !important;
+}
+@media(min-width:701px){
+  .sushiFeature{
+    height:min(470px,26vw) !important;
+    min-height:320px !important;
+    background-size:100% auto !important;
+    background-position:center center !important;
+  }
+}
