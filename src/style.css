@@ -37,3 +37,20 @@ header{height:72px;position:sticky;top:0;z-index:30;display:grid;grid-template-c
     background-size:cover;
   }
 }
+
+/* HERO PHOTO VISIBILITY — keep the warm photography alive */
+.hero::after{
+  background:linear-gradient(90deg,rgba(7,4,2,.42) 0%,rgba(7,4,2,.12) 38%,rgba(7,4,2,.02) 68%,rgba(7,4,2,.12) 100%) !important;
+}
+.hero{
+  background-image:url('/pollo-sushi-1.png') !important;
+  background-position:center 55% !important;
+}
+@media(max-width:700px){
+  .hero::after{
+    background:linear-gradient(180deg,rgba(7,4,2,.04) 0%,rgba(7,4,2,.08) 52%,rgba(7,4,2,.58) 100%) !important;
+  }
+  .hero{
+    background-position:center 52% !important;
+  }
+}
