@@ -80,3 +80,36 @@ header{height:72px;position:sticky;top:0;z-index:30;display:grid;grid-template-c
     background-position:center !important;
   }
 }
+
+/* SUSHI SECTION — restore editorial composition on mobile */
+.sushiFeature{
+  background-image:url('/sushi-2.png') !important;
+}
+@media(max-width:700px){
+  .sushiFeature{
+    height:310px !important;
+    min-height:310px !important;
+    background-size:cover !important;
+    background-position:center 58% !important;
+  }
+  .sushiFeature::after{
+    background:linear-gradient(90deg,rgba(5,3,2,.12),rgba(5,3,2,.46)) !important;
+  }
+  .sushiFeature .grillNote{
+    top:18% !important;
+    right:22px !important;
+    left:auto !important;
+    width:44% !important;
+    font-size:20px !important;
+    line-height:1.02 !important;
+  }
+  .sushiFeature .grillCaption{
+    right:22px !important;
+    bottom:24px !important;
+    left:auto !important;
+  }
+  .sushiFeature .grillNumber{
+    left:22px !important;
+    top:24px !important;
+  }
+}
