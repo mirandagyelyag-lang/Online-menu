@@ -1,8 +1,8 @@
 import React,{useState}from'react';import{createRoot}from'react-dom/client';import{Plus,Minus,X,ShoppingBag,ArrowRight}from'lucide-react';import'./style.css';
 const products=[
-{id:1,cat:'Pollo frito',name:'Crujiente Chucky',desc:'Pollo frito dorado, crujiente y recién hecho.',price:7990,img:'https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?auto=format&fit=crop&w=900&q=85'},
-{id:2,cat:'Pollo frito',name:'Balde Chucky',desc:'Piezas de pollo crujiente para compartir.',price:12990,img:'https://images.unsplash.com/photo-1562967914-608f82629710?auto=format&fit=crop&w=900&q=85'},
-{id:3,cat:'Sushi',name:'Roll Chucky',desc:'Roll de la casa, fresco, cremoso y hecho al momento.',price:6990,img:'https://images.unsplash.com/photo-1579871494447-9811cf80d66c?auto=format&fit=crop&w=900&q=85'},
+{id:1,cat:'Pollo frito',name:'Crujiente Chucky',desc:'Pollo frito dorado, crujiente y recién hecho.',price:7990,img:'/pollo-frito-2.png'},
+{id:2,cat:'Pollo frito',name:'Balde Chucky',desc:'Piezas de pollo crujiente para compartir.',price:12990,img:'/cubeta-pollo.png'},
+{id:3,cat:'Sushi',name:'Roll Chucky',desc:'Roll de la casa, fresco, cremoso y hecho al momento.',price:6990,img:'/sushi-03.png'},
 {id:4,cat:'Sushi',name:'Roll Crocante',desc:'Roll crocante con salsa de la casa.',price:7490,img:'https://images.unsplash.com/photo-1617196034796-73dfa7b1fd56?auto=format&fit=crop&w=900&q=85'},
 {id:5,cat:'Salsas',name:'Salsa Chucky',desc:'El toque final para acompañar tu pedido.',price:800,img:'https://images.unsplash.com/photo-1472476443507-c7a5948772fc?auto=format&fit=crop&w=900&q=85'},
 {id:6,cat:'Bebidas',name:'Bebida',desc:'Elige entre los sabores disponibles.',price:2000,img:'https://images.unsplash.com/photo-1622483767028-3f66f32aef97?auto=format&fit=crop&w=900&q=85'}
